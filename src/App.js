@@ -1,24 +1,74 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ProductList from './ProductList';
+import ShopLayout from './ShopLayout';
+import AddProduct from './AddProduct';
+import EditProduct from './EditProduct';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import './App.css';
 
+const initialState = {
+  items: [
+      {id: 1, product: "Apples", quantity: "2 lbs", price: "$5", status: false},
+      {id: 2, product: "Bananas", quantity: "1.5 lbs", price: "$2.50", status: false}
+  ]
+};
+
+// 🔥 Reducer - Only manages state, doesn't handle methods directly
+const reducer = (state = initialState, action) => {
+  switch(action.type) {
+      case 'SET_ITEMS':
+          return { ...state, items: action.payload };
+      default:
+          return state;
+  }
+};
+// 🔥 Create Redux Store
+const store = createStore(
+  reducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+  const [items , setItems] = useState(store.getState().items);
+
+  function deleteItem(id)
+  {
+   // setItems(items.filter((item) => item.id !== id));
+   const updatedItems = items.filter((item) => item.id !== id);
+    setItems(updatedItems);
+    store.dispatch({ type: 'SET_ITEMS', payload: updatedItems });
+  }
+
+  function addItem(item) 
+  {
+    const newItem = { ...item, id: Date.now() };
+    const updatedItems = [...items, newItem];
+    setItems(updatedItems);
+    store.dispatch({ type: 'SET_ITEMS', payload: updatedItems });
+  }
+
+  function updateItem(updated)
+{
+    const updatedItems = items.map((item) => item.id === updated.id ? updated : item);
+    setItems(updatedItems);
+    store.dispatch({ type: 'SET_ITEMS', payload: updatedItems });
+}
+  return(
+    <Router>
+        <ShopLayout>
+            <Routes>
+               <Route path="/" element={ <ProductList items={items} onDelete={deleteItem} /> }    />
+
+               <Route path="/add" element={ <AddProduct onAdd={addItem} /> }    />
+
+               <Route path="/edit/:id" element={ <EditProduct items={items} onUpdate={updateItem} /> } />
+            </Routes>
+        </ShopLayout>
+    </Router>
   );
 }
 
