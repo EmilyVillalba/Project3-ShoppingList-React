@@ -11,8 +11,8 @@ import './App.css';
 
 const initialState = {
   items: [
-      {id: 1, product: "Apples", quantity: "2 lbs", price: "$5", status: false},
-      {id: 2, product: "Bananas", quantity: "1.5 lbs", price: "$2.50", status: false}
+      {id: 1, product: "Apples", quantity: "2 lbs", price: "$5", purchased: false},
+      {id: 2, product: "Bananas", quantity: "1.5 lbs", price: "$2.50", purchased: false}
   ]
 };
 

@@ -10,7 +10,7 @@ function AddProduct({ onAdd }) {
     navigate("/");
   }
 
-  return <ShopForm initialData={{ product: "", quantity: "", price:"", status: false }} onSubmit={handleAdd} />;
+  return <ShopForm initialData={{ product: "", quantity: "", price:"", purchased: false }} onSubmit={handleAdd} />;
 }
 
 export default AddProduct;

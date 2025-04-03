@@ -15,9 +15,9 @@ function ShopForm({initialData , onSubmit})
         event.preventDefault();
         onSubmit(formData);
     }
-    function handleStatusChange()
+    function handlePurchasedChange()
     {
-       setFormData({...formData, status: !formData.status})
+       setFormData({...formData, purchased: !formData.purchased})
     }
 
     return (
@@ -57,8 +57,8 @@ function ShopForm({initialData , onSubmit})
               <input 
                 type="checkbox"
                 className="form-check-input"
-                checked={formData.status}
-                onChange={handleStatusChange}
+                checked={formData.purchased}
+                onChange={handlePurchasedChange}
               />
               <label className="form-check-label">Purchased</label>
           </div>
