@@ -8,7 +8,7 @@ function ProductList({items , onDelete})
   const filteredItems = items.filter(item => {
      return (filterPurchased === "All" || (filterPurchased === "Purchased" && item.purchased) || (filterPurchased === "Not Purchased" && !item.purchased))
   });
-
+  
     return (
 
       <div>

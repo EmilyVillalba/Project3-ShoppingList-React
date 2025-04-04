@@ -34,6 +34,30 @@ const store = createStore(
 function App() {
 
   const [items , setItems] = useState(store.getState().items);
+  /*const handleToggle = (id) => {
+    setItems(
+      items.map((items) =>
+        items.id === id ? { ...items, purchased: !items.purchased } : items
+      )
+    );
+  };
+
+  return (
+    <ul>
+      {items.map((items) => (
+        <li
+          key={items.id}
+          style={{
+            textDecoration: items.purchased ? 'line-through' : 'none',
+          }}
+          onClick={() => handleToggle(items.id)}
+        >
+          {items.text}
+        </li>
+      ))}
+    </ul>
+  );
+} */
 
   function deleteItem(id)
   {

@@ -18,6 +18,18 @@ h1 {
   font-family: "Fascinate Inline", sans-serif;
 }
 
+th {
+  font-family: "Aladin", sans-serif;
+  font-size: x-large;
+  color: rgb(145, 224, 250) !important;
+  text-align: center;
+}
+
+td {
+  font-family: "Caveat", sans-serif !important;
+  font-size: x-large !important;
+}
+
 .form-label {
   font-family: "Aladin", sans-serif;
   font-size: x-large;
@@ -31,11 +43,8 @@ h1 {
   font-weight: 600;
 }
 
-th {
-  font-family: "Aladin", sans-serif;
-  font-size: x-large;
-  color: rgb(145, 224, 250) !important;
-  text-align: center;
+.form-check-input {
+  text-decoration: line-through;
 }
 
 .btn-info {
@@ -61,7 +70,3 @@ th {
   font-size: x-large !important;
 }
 
-td {
-  font-family: "Caveat", sans-serif !important;
-  font-size: x-large !important;
-}
