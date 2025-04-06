@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+Project 3: Task Management Web App
+Student: Emily Villalba
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1) Project requirements:
+- Create a React App to do list
+- App that should contain at least 2 views (/todos & /contact)
+- Contact Form should display the following fields: first name, last name, email, comments field.
 
-## Available Scripts
+2) Description of this project & Functionality Offered:
+- This is a shopping list app that can be used as an aid to remember items that need to be purchased.
+- Users will can create a list of products during the week, before a shopping trip, by clicking on the "Add Product" button.
+- When clicking on the "Add Product" button, they will be able to include the name of the product, the quantity of each item required, and the price that they expect to pay for this item.
+- Users will be able to edit or delete list items at any time, by clicking on the "Edit" or "Delete" buttons found next to each product, on the "Home" page.
+- When an item has been placed in the shopping cart, user will be able to click on the "edit" button, select the checkbox to mark it as "purchased".
+- By including the price they expect to pay, users will be able to gauge if an item has increased or decreased since the last time they purchased it.
+- Users will be able to choose to view "All" the items on the list, Only "Purchased" items on the list, or Only "Not Purchased" items on the list, by using the drop down menu.
+- Users will be able to contact the company that manages this app for assistance if required, by filling out the contact form.
 
-In the project directory, you can run:
+3) Technoligies used:
+- HTML
+- CSS
+- JavaScript
+- React
+- Visual Studio Code
+- React-Bootsrap
+- Redux
+- Google Fonts
+- Draw.io
 
-### `npm start`
+4) Ideas for future improvements:
+- Adding a line that will add the "Total" of all of the products, to have an estimate of how much all the products on the list will cost.
+- Adding different backgrounds so that the user can pick what background they would like to see on their form. 
+- Adding a selection of fonts that the user can pick from.
+- A feature to add a specific product as a "Favorite", this way it can automatically be added to the list for the next shopping trip.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

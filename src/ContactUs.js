@@ -7,6 +7,7 @@ function ContactUs()
 {
     return (
       <>
+      
       <FloatingLabel
         controlId="floatingInput"
         label="First Name"
@@ -40,7 +41,7 @@ function ContactUs()
         </FloatingLabel>
 
         <div>
-          <button type="submit" className="btn btn-info">Submit</button>
+          <button type="submit" className="btn btn-info" onclick='submit'>Submit</button>
       </div>
       </> 
       );
