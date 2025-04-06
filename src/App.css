@@ -2,37 +2,64 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: "Fascinate Inline", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th {
+  font-family: "Aladin", sans-serif;
+  font-size: x-large;
+  color: rgb(145, 224, 250) !important;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+td {
+  font-family: "Caveat", sans-serif !important;
+  font-size: x-large !important;
 }
 
-.App-link {
-  color: #61dafb;
+.form-label {
+  font-family: "Aladin", sans-serif;
+  font-size: x-large;
+  font-weight: 600;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-check-label {
+  font-family: "Aladin", sans-serif;
+  font-size: large;
+  font-weight: 600;
 }
+
+.btn-info {
+  font-family: "Aladin", sans-serif !important;
+  font-size: x-large !important;
+  font-weight: 500 !important;
+  color: white !important;
+  margin: 25px;
+  
+}
+
+.btn-secondary {
+  color: rgb(145, 224, 250) !important;
+  font-size: large !important;
+}
+
+.form-select {
+  font-family: "Caveat", sans-serif !important;
+  font-size: x-large !important;
+}
+
+.form-control {
+  font-family: "Caveat", sans-serif !important;
+  font-size: x-large !important;
+}
+
+.floating-form {
+  font-family: "Caveat", sans-serif !important;
+}
+
+#floatingInput {
+  font-family: "Caveat", sans-serif !important;
+}
+

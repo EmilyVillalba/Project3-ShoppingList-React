@@ -40,7 +40,6 @@ function App() {
   
   function deleteItem(id)
   {
-   // setItems(items.filter((item) => item.id !== id));
    const updatedItems = items.filter((item) => item.id !== id);
     setItems(updatedItems);
     store.dispatch({ type: 'SET_ITEMS', payload: updatedItems });
@@ -69,6 +68,8 @@ function App() {
                <Route path="/add" element={ <AddProduct onAdd={addItem} /> }    />
 
                <Route path="/edit/:id" element={ <EditProduct items={items} onUpdate={updateItem} /> } />
+
+               <Route path="/contact" element={<ContactUs />} />
             </Routes>
         </ShopLayout>
     </Router>

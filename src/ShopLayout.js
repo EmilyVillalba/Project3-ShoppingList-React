@@ -11,7 +11,7 @@ function ShopLayout({children})
             <nav>
                 <Link className="btn btn-info me-2" to="/">Home</Link>
                 <Link className="btn btn-info" to="/add">Add Product</Link>
-                <Link className="btn btn-info" to="/ContactUs">Contact Us</Link>
+                <Link className="btn btn-info" to="/contact">Contact Us</Link>
             </nav>
             {children}
          </div>

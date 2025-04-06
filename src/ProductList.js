@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {Link} from "react-router-dom";
 
+
 function ProductList({items , onDelete})
 {
   const [filterPurchased , setFilterPurchased] = useState('All');
@@ -21,7 +22,7 @@ function ProductList({items , onDelete})
           </div>
 
         <div className="table-responsive mt-4">
-          <table className="table table-bordered">
+          <table id="total" className="table table-bordered">
             <thead className="table-dark">
               <tr>
                 <th>Product</th>

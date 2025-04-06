@@ -1,46 +1,48 @@
 import React from "react";
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
+
 
 function ContactUs()
 {
     return (
-        <form >
-        <div className="mb-3">
-          <label className="form-label">First Name</label>
-          <input
-            type="text"
-            className="form-control"
-            placeholder="First Name"
-            required
-          />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Last Name</label>
-          <input
-            type="email"
-            className="form-control"
-            placeholder="Last Name"
-            required
-          />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Email</label>
-          <input
-            type="text"
-            className="form-control"
-            placeholder="name@example.com"
-            required
-          />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Send us a message</label>
-          <input
+      <>
+      <FloatingLabel
+        controlId="floatingInput"
+        label="First Name"
+        className="mb-3"
+      >
+        <Form.Control className="floating-form" type="text" placeholder="First Name" />
+      </FloatingLabel>
+  
+      <FloatingLabel
+        controlId="floatingInput"
+        label="Last Name"
+        className="mb-3"
+      >
+        <Form.Control type="text" placeholder="Last Name" />
+      </FloatingLabel>
+  
+      <FloatingLabel
+        controlId="floatingInput"
+        label="Email address"
+        className="mb-3"
+      >
+        <Form.Control type="email" placeholder="name@example.com" />
+      </FloatingLabel>
+  
+        <FloatingLabel controlId="floatingTextarea" label="Comments">
+          <Form.Control
             as="textarea"
-            rows={3}
-            className="form-control"
+            placeholder="Leave a comment here"
+            style={{ height: '100px' }}
           />
-        </div>
-        <button type="submit" className="btn btn-info" onClick={"/"}>Submit</button>
-      </form>
+        </FloatingLabel>
+
+        <div>
+          <button type="submit" className="btn btn-info">Submit</button>
+      </div>
+      </> 
       );
 }
 
