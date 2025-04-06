@@ -23,7 +23,7 @@ function ProductList({items , onDelete})
 
         <div className="table-responsive mt-4">
           <table id="total" className="table table-bordered">
-            <thead className="table-dark">
+            <thead className="table-secondary">
               <tr>
                 <th>Product</th>
                 <th>Quantity</th>

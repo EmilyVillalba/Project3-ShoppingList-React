@@ -3,19 +3,29 @@
 }
 
 h1 {
-  font-family: "Fascinate Inline", sans-serif;
+  font-family: "Aladin", sans-serif;
+  font-size: 70px;
+  color: turquoise;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: darkcyan;
+  text-shadow: -4px 2px 0 white;
 }
 
 th {
   font-family: "Aladin", sans-serif;
-  font-size: x-large;
-  color: rgb(145, 224, 250) !important;
+  font-size: 30px;
+  color: darkcyan !important;
   text-align: center;
 }
 
 td {
   font-family: "Caveat", sans-serif !important;
   font-size: x-large !important;
+}
+
+.table-secondary {
+  border-color: darkcyan !important;
+  background-color: rgb(83, 83, 83) !important;
 }
 
 .form-label {
@@ -32,17 +42,30 @@ td {
 }
 
 .btn-info {
-  font-family: "Aladin", sans-serif !important;
-  font-size: x-large !important;
-  font-weight: 500 !important;
+  background-color: turquoise !important;
+  font-family: "Aladin", sans-serif;
+  font-size: x-large;
+  font-weight: 500;
   color: white !important;
+  border-color: darkcyan;
   margin: 25px;
   
 }
 
+.btn-info:hover {
+  background-color: white !important;
+  color: darkcyan !important;
+  border-color: darkcyan;
+}
+
 .btn-secondary {
-  color: rgb(145, 224, 250) !important;
-  font-size: large !important;
+  color: turquoise !important;
+  font-size: large;
+}
+
+.btn-secondary:hover {
+  background-color: lightgray !important;
+  border-color: darkcyan;
 }
 
 .form-select {
@@ -51,12 +74,9 @@ td {
 }
 
 .form-control {
-  font-family: "Caveat", sans-serif !important;
-  font-size: x-large !important;
-}
+  font-family: "Caveat", sans-serif;
+  font-size: x-large;
 
-.floating-form {
-  font-family: "Caveat", sans-serif !important;
 }
 
 #floatingInput {
