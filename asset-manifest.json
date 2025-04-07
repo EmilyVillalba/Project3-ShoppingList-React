@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Project3-ShoppingList-React/static/css/main.268792a1.css",
-    "main.js": "/Project3-ShoppingList-React/static/js/main.6f0157c4.js",
+    "main.css": "/Project3-ShoppingList-React/static/css/main.3f50f126.css",
+    "main.js": "/Project3-ShoppingList-React/static/js/main.6366b990.js",
     "static/js/453.37094a9a.chunk.js": "/Project3-ShoppingList-React/static/js/453.37094a9a.chunk.js",
     "static/media/lemons3.jpg": "/Project3-ShoppingList-React/static/media/lemons3.67b5cf73a1caf8a3dd81.jpg",
     "index.html": "/Project3-ShoppingList-React/index.html",
-    "main.268792a1.css.map": "/Project3-ShoppingList-React/static/css/main.268792a1.css.map",
-    "main.6f0157c4.js.map": "/Project3-ShoppingList-React/static/js/main.6f0157c4.js.map",
+    "main.3f50f126.css.map": "/Project3-ShoppingList-React/static/css/main.3f50f126.css.map",
+    "main.6366b990.js.map": "/Project3-ShoppingList-React/static/js/main.6366b990.js.map",
     "453.37094a9a.chunk.js.map": "/Project3-ShoppingList-React/static/js/453.37094a9a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.268792a1.css",
-    "static/js/main.6f0157c4.js"
+    "static/css/main.3f50f126.css",
+    "static/js/main.6366b990.js"
   ]
 }
